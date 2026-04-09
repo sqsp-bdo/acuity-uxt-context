@@ -2,7 +2,8 @@
 
 **Figma source**: [UXT / Onboarding — [3.30] Concepts](https://www.figma.com/design/okhVkzSEB2CLfob8eUABcm/%E2%9C%BC-UXT---Onboarding?node-id=750-19519)  
 **Key frames node**: `898:8470` (Wizard / Key frames)  
-**Selected concept**: Concept 2 — Guided Step-Based Creation (see [concept review](../meetings/2026-03-30-concept-review.md))
+**Selected concept**: Hybrid — Concept A template cards (fast path) + Concept B stepped flow (creation path). See [design direction update](../meetings/2026-04-09-design-direction-update.md).  
+> **Note**: Direction updated April 9, 2026 based on UXR testing. Not yet finalized — await updated designs from Luenne.
 
 ## Screen Inventory
 
@@ -120,9 +121,10 @@ Each card shows:
 - **Nav pattern**: Back chevron (top left), Skip (top right)
 - **Viewport**: Mobile web, 390px width
 
-## Rejected Approach: Concept 1 (Upfront Generation)
+## Concept A: Template-First (Fast Path)
 
-Concept 1 pre-generated a bundle of services based on industry. Rejected because:
-- Users felt they were "correcting" rather than "building"
-- Opinionation must balance showing capabilities without overwhelming
-- Team preferred user-provides-input over system-generates-unused-bundle
+> **Status as of April 9, 2026**: No longer rejected — being reconsidered as the fast-path entry point in a hybrid approach. Possibly extended to allow selecting multiple templates upfront.
+
+Originally called "Concept 1" and deprioritized at the March 30 concept review. UXR testing since then suggests template cards work well as a starting point when paired with a stepped creation flow for custom appointment types.
+
+Original concern (still valid): users must not feel like they are "correcting" system-generated content. Template cards should feel like a fast-path choice, not a bundle that was auto-applied.

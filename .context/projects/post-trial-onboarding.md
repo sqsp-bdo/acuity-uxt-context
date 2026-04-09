@@ -25,9 +25,14 @@ Rests on two validated assumptions:
 - **Pre Account Creation Onboarding Phase 2**: +4.46pp increase in Trial to Updating CSP (stat sig), +18% directional lift in Assign to Sub for mobile web. But pre-trial placement hurt trial volume.
 - **Goal**: Move guided approach post-trial to capture activation gains without sacrificing top-of-funnel volume.
 
-## Solution: Guided 5-Step Wizard (Concept 2)
+## Solution: Hybrid of Concept A + Concept B
 
-The selected approach (chosen over Concept 1 upfront generation — see [concept review](../meetings/2026-03-30-concept-review.md)).
+> **Updated April 9, 2026**: Direction is shifting to a hybrid based on early UXR signal. See [design direction update](../meetings/2026-04-09-design-direction-update.md). Not yet finalized.
+
+- **Concept A (template-first)** — template cards serve as a fast-path starting point for users who want speed. Possibly extended to support selecting multiple templates upfront.
+- **Concept B (step-by-step)** — stepped, AI-guided flow powers the "create a new appointment type" path for users who want to build their own.
+
+Both paths are expected to coexist. The original concept review (see [2026-03-30](../meetings/2026-03-30-concept-review.md)) chose Concept B over Concept A in isolation, but UXR testing suggests the fastest path combines both.
 
 ### Wizard Flow
 
