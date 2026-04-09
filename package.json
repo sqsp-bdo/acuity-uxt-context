@@ -1,0 +1,9 @@
+{
+  "name": "@squarespace/acuity-uxt-context",
+  "version": "1.0.0",
+  "description": "UX Transformation Team AI context for Acuity engineers",
+  "keywords": ["claude", "ai", "skills", "acuity", "uxt"],
+  "author": "Squarespace",
+  "license": "UNLICENSED",
+  "private": true
+}
