@@ -1,0 +1,7 @@
+See AI.md for full instructions on how to use this repository.
+
+Before starting any UXT work, load context by referencing the prompt files:
+- @prompts/uxt-context.md — load all team context
+- @prompts/uxt-wizard.md — load the post-trial wizard design spec
+
+The source files are in .context/ — attach or @-reference them as needed.
