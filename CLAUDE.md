@@ -1,6 +1,6 @@
 # UX Transformation Team — AI Context Repository
 
-This repository is the shared context hub for the Acuity UX Transformation Team. It is designed to be read by AI agents to provide consistent, up-to-date project context across all engineers on the team.
+This repository is the shared context hub for the Acuity UX Transformation Team. It provides consistent, up-to-date project context for AI assistants across all engineers on the team — regardless of which AI tool you use.
 
 ## How to use this repo
 
@@ -10,27 +10,33 @@ Clone it alongside your main `acuity` repo:
 ~/acuity-uxt-context/      # this repo
 ```
 
-Then use the slash commands below from within the `acuity` repo (or any project directory) by pointing Claude at this repo's context files.
+Point your AI assistant at the files in `.context/` and `prompts/` before starting any UXT work.
 
-## Slash commands
+## Using with your AI tool
 
-| Command | Purpose |
-|---------|---------|
-| `/uxt-context` | Load all team context — start here before any UXT work |
-| `/uxt-wizard` | Load the post-trial wizard design spec for implementation |
+### Claude Code
+Slash commands are pre-configured in `.claude/commands/`:
+- `/uxt-context` — loads all team context
+- `/uxt-wizard` — loads the wizard design spec
 
-## When to read what
+### Cursor / Copilot / Gemini / other tools
+Use the prompts in `prompts/` directly — paste them into your chat, or reference them with your tool's file attachment or `@file` syntax:
 
-Before writing any UXT-related code, run `/uxt-context`. Claude will read the key files and confirm its understanding of the project before you give it a task.
+| Prompt file | Purpose |
+|-------------|---------|
+| `prompts/uxt-context.md` | Load all team context — start here before any UXT work |
+| `prompts/uxt-wizard.md` | Load the post-trial wizard design spec for implementation |
 
-For wizard screen implementation specifically, run `/uxt-wizard` to load the screen-by-screen design spec.
+### Any tool
+The `.context/` files are plain markdown — attach or reference them however your tool supports it.
 
 ## Keeping this up to date
 
 These files should be updated when:
 - A new one-pager is approved → add to `.context/projects/`
-- A concept review decision is made → add to `.context/meetings/`
-- Strategy shifts (e.g., mobile app investment changes) → update `.context/strategy/mobile-strategy.md`
+- A concept review or design decision is made → add to `.context/meetings/`
+- Strategy shifts → update `.context/strategy/`
 - New Figma screens are approved → update `.context/design/`
+- Prompts need changing → update `prompts/`, then `.claude/commands/` will follow automatically
 
 Owner: Engineering lead on UXT. PRs welcome from any squad member.
