@@ -12,8 +12,9 @@ Read the following files and use their contents to inform all subsequent respons
 4. `.context/team/icps.md` — target customers and vocabulary rules
 5. `.context/projects/post-trial-onboarding.md` — Acquisition squad project
 6. `.context/projects/appt-type-creation.md` — Activation squad project
-7. `.context/strategy/mobile-strategy.md` — mobile web vs. app strategy
-8. `.context/reference/metrics-glossary.md` — metric definitions and baselines
+7. `.context/strategy/90-day-plan.md` — Q2 2026 plan: 6 initiatives, guiding policy, success metrics, deferred scope
+8. `.context/strategy/mobile-strategy.md` — mobile web vs. app strategy
+9. `.context/reference/metrics-glossary.md` — metric definitions and baselines
 
 After reading, confirm with a one-paragraph summary of:
 - What the UXT team is trying to accomplish

@@ -21,6 +21,7 @@ This folder is the source of truth for the Acuity UX Transformation Team (UXT). 
 ### Strategy
 | File | Read when... |
 |------|-------------|
+| [strategy/90-day-plan.md](strategy/90-day-plan.md) | Understanding the overall Q2 2026 plan: 6 initiatives, guiding policy, success metrics, deferred scope |
 | [strategy/mobile-strategy.md](strategy/mobile-strategy.md) | Making decisions about mobile web vs. mobile app surface placement |
 
 ### Design
@@ -41,8 +42,9 @@ This folder is the source of truth for the Acuity UX Transformation Team (UXT). 
 ### Meetings
 | File | Read when... |
 |------|-------------|
-| [meetings/2026-03-30-concept-review.md](meetings/2026-03-30-concept-review.md) | You need context on why Concept 2 was chosen over Concept 1 for the wizard |
-| [meetings/2026-03-kickoff.md](meetings/2026-03-kickoff.md) | You need context on team structure, Q2 focus, and measurement approach |
+| [meetings/2026-04-09-design-direction-update.md](meetings/2026-04-09-design-direction-update.md) | Latest wizard direction: hybrid concept (Concept A fast-path + Concept B stepped creation) |
+| [meetings/2026-03-30-concept-review.md](meetings/2026-03-30-concept-review.md) | Why Concept 2 was chosen over Concept 1 for the wizard |
+| [meetings/2026-03-kickoff.md](meetings/2026-03-kickoff.md) | Team structure, Q2 focus, and measurement approach |
 
 ---
 
@@ -55,4 +57,5 @@ This folder is the source of truth for the Acuity UX Transformation Team (UXT). 
 - **Language rule**: Use service-provider vocabulary. Never expose Acuity's internal model (appointment types → services, availability → hours, resources → rooms/spaces).
 - **Measurement**: Persistent holdout group (5–10%) + staged rollouts. Not A/B tests by default.
 - **The aha moment**: Users seeing their own branded scheduling page — not completing configuration. Get them there fast.
-- **Active Figma**: [UXT / Onboarding](https://www.figma.com/design/okhVkzSEB2CLfob8eUABcm/%E2%9C%BC-UXT---Onboarding)
+- **Active Figma (wizard)**: [UXT / Onboarding](https://www.figma.com/design/okhVkzSEB2CLfob8eUABcm/%E2%9C%BC-UXT---Onboarding)
+- **Active Figma (strategy)**: [UX Transformation 90-Days](https://www.figma.com/design/71IQcpbC00rIwNB6QgpoY6/ux-transformation-90-days?node-id=19333-10221)
