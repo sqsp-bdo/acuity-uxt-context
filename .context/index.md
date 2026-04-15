@@ -18,6 +18,7 @@ This folder is the source of truth for the Acuity UX Transformation Team (UXT). 
 | [projects/appt-type-creation.md](projects/appt-type-creation.md) | Working on appointment type creation UX improvements (Activation squad) |
 | [projects/mobile-bridge.md](projects/mobile-bridge.md) | Working on the Frontsite experiment to drive mobile web users to the app |
 | [projects/pre-account-architecture.md](projects/pre-account-architecture.md) | Understanding the predecessor flow — architecture, tech stack, and what to reuse for the post-trial wizard |
+| [projects/post-trial-wizard-decisions.md](projects/post-trial-wizard-decisions.md) | Architectural decisions and open questions for the post-trial wizard |
 
 ### Strategy
 | File | Read when... |
