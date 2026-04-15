@@ -1,6 +1,6 @@
 # Design: Post-Trial Onboarding Wizard
 
-**Figma source**: [UXT / Onboarding — [3.30] Concepts](https://www.figma.com/design/okhVkzSEB2CLfob8eUABcm/%E2%9C%BC-UXT---Onboarding?node-id=750-19519)  
+**Figma source**: [UXT / Onboarding — [4.8] Hybrid](https://www.figma.com/design/okhVkzSEB2CLfob8eUABcm/%E2%9C%BC-UXT---Onboarding?node-id=1284-28539)  
 **Key frames node**: `898:8470` (Wizard / Key frames)  
 **Selected concept**: Hybrid — Concept A template cards (fast path) + Concept B stepped flow (creation path). See [design direction update](../meetings/2026-04-09-design-direction-update.md).  
 > **Note**: Direction updated April 9, 2026 based on UXR testing. Not yet finalized — await updated designs from Luenne.
