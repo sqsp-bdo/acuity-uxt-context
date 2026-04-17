@@ -44,6 +44,7 @@ This folder is the source of truth for the Acuity UX Transformation Team (UXT). 
 ### Meetings
 | File | Read when... |
 |------|-------------|
+| [meetings/2026-04-16-staff-eng-review.md](meetings/2026-04-16-staff-eng-review.md) | Staff eng review with Jon Tascher — AI deferred for MVP, fixture templates for Screen 3, architecture validated |
 | [meetings/2026-04-09-design-direction-update.md](meetings/2026-04-09-design-direction-update.md) | Latest wizard direction: hybrid concept (Concept A fast-path + Concept B stepped creation) |
 | [meetings/2026-03-30-concept-review.md](meetings/2026-03-30-concept-review.md) | Why Concept 2 was chosen over Concept 1 for the wizard |
 | [meetings/2026-03-kickoff.md](meetings/2026-03-kickoff.md) | Team structure, Q2 focus, and measurement approach |
