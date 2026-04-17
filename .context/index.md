@@ -50,6 +50,7 @@ This folder is the source of truth for the Acuity UX Transformation Team (UXT). 
 ### Meetings
 | File | Read when... |
 |------|-------------|
+| [meetings/2026-04-17-jeremy-ai-sync.md](meetings/2026-04-17-jeremy-ai-sync.md) | AI infrastructure sync with Jeremy (principal eng) — do not use sqsp/ai-content-generator, Acuity builds own AI service in AWS |
 | [meetings/2026-04-16-leads-weekly.md](meetings/2026-04-16-leads-weekly.md) | Leads weekly — project renamed post-signup, hybrid concept confirmed, chat path launching alongside linear wizard |
 | [meetings/2026-04-16-staff-eng-review.md](meetings/2026-04-16-staff-eng-review.md) | Staff eng review with Jon Tascher — AI deferred for MVP, fixture templates for Screen 3, architecture validated |
 | [meetings/2026-04-09-design-direction-update.md](meetings/2026-04-09-design-direction-update.md) | Latest wizard direction: hybrid concept (Concept A fast-path + Concept B stepped creation) |

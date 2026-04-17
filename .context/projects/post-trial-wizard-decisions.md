@@ -22,14 +22,17 @@ Rationale:
 - Fixtures provide immediate value and a reliable fallback if AI is ever down
 - AI bolts on as a later iteration once Jon's framework evaluation (Mastra/Rasa) completes
 
-### Onboarding Intelligence Service — post-MVP
+### Onboarding Intelligence Service — post-MVP, Acuity-owned
 The Go microservice with SSE streaming and LLM integration is the correct eventual architecture (validated by Jon) but is not needed for Phase 1. Deferred until AI timeline is confirmed.
 
+**`sqsp/ai-content-generator` is explicitly ruled out** (April 17, 2026 — guidance from Jeremy, principal engineer). That service has bad practices and should not be used. Acuity will build and own its own AI service in AWS.
+
 When AI does ship:
-- Separate Go service, publicly exposed routes
+- Separate Go service deployed in Acuity's AWS infrastructure, publicly exposed routes
 - Short-lived JWTs issued by the monolith for auth (MFE calls service directly — PHP not in streaming path)
-- Squarespace Enterprise LLM account exists — Jon owns access and timeline
+- Acuity owns its own LLM API key, rate limiting, caching, and fallback logic
 - Caching required for cost management
+- Fallback to fixture templates if AI service is down
 
 ### Streaming (SSE) — future state
 SSE architecture is correct and validated but is not a Phase 1 requirement. Screen 3 uses a simple request/response to `/api/industry-fixture` for MVP.
