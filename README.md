@@ -16,6 +16,12 @@ Then in Claude Code:
 /uxt-wizard    — load the post-trial wizard design spec
 ```
 
+**Getting updates**: Skills are installed as a snapshot. When this repo changes, re-run:
+
+```bash
+npx skills update
+```
+
 ### Cursor / Copilot / other tools
 
 Clone alongside the `acuity` repo and reference the prompt files:
