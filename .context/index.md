@@ -31,6 +31,11 @@ This folder is the source of truth for the Acuity UX Transformation Team (UXT). 
 |------|-------------|
 | [design/post-trial-wizard-flow.md](design/post-trial-wizard-flow.md) | Implementing any screen in the post-trial onboarding wizard |
 
+### ADRs
+| File | Read when... |
+|------|-------------|
+| [adrs/uxt-global-holdout.md](adrs/uxt-global-holdout.md) | Understanding how the UXT global holdout group is structured and why |
+
 ### Reference
 | File | Read when... |
 |------|-------------|
