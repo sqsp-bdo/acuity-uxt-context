@@ -14,7 +14,7 @@ This folder is the source of truth for the Acuity UX Transformation Team (UXT). 
 ### Active Projects
 | File | Read when... |
 |------|-------------|
-| [projects/post-trial-onboarding.md](projects/post-trial-onboarding.md) | Working on the post-trial wizard / interstitial onboarding flow (Acquisition squad) |
+| [projects/post-trial-onboarding.md](projects/post-trial-onboarding.md) | Working on the post-signup wizard / interstitial onboarding flow (Acquisition squad) — renamed from post-trial Apr 16 |
 | [projects/appt-type-creation.md](projects/appt-type-creation.md) | Working on appointment type creation UX improvements (Activation squad) |
 | [projects/mobile-bridge.md](projects/mobile-bridge.md) | Working on the Frontsite experiment to drive mobile web users to the app |
 | [projects/pre-account-architecture.md](projects/pre-account-architecture.md) | Understanding the predecessor flow — architecture, tech stack, and what to reuse for the post-trial wizard |
@@ -44,6 +44,7 @@ This folder is the source of truth for the Acuity UX Transformation Team (UXT). 
 ### Meetings
 | File | Read when... |
 |------|-------------|
+| [meetings/2026-04-16-leads-weekly.md](meetings/2026-04-16-leads-weekly.md) | Leads weekly — project renamed post-signup, hybrid concept confirmed, chat path launching alongside linear wizard |
 | [meetings/2026-04-16-staff-eng-review.md](meetings/2026-04-16-staff-eng-review.md) | Staff eng review with Jon Tascher — AI deferred for MVP, fixture templates for Screen 3, architecture validated |
 | [meetings/2026-04-09-design-direction-update.md](meetings/2026-04-09-design-direction-update.md) | Latest wizard direction: hybrid concept (Concept A fast-path + Concept B stepped creation) |
 | [meetings/2026-03-30-concept-review.md](meetings/2026-03-30-concept-review.md) | Why Concept 2 was chosen over Concept 1 for the wizard |

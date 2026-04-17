@@ -1,5 +1,5 @@
-# Post-Trial Wizard: Open Questions & Decisions
-<!-- Last updated: April 16, 2026 -->
+# Post-Signup Wizard: Open Questions & Decisions
+<!-- Last updated: April 16, 2026 — project renamed from "post-trial" to "post-signup" -->
 
 Tracks architectural decisions and open items for the post-trial onboarding wizard. See [post-trial-onboarding.md](post-trial-onboarding.md) for the full project brief and [pre-account-architecture.md](pre-account-architecture.md) for the predecessor flow.
 
@@ -75,3 +75,16 @@ Needs confirmation: does `completedPostTrialWizard = true` need to trigger a spe
 
 ### AI timeline
 Jon owns conversations about accelerating AI framework work (Mastra/Rasa evaluation). Passive dependency for Phase 1 — needed before AI bolts onto Screen 3 post-MVP.
+
+### Chat-based path (Path B) scope
+Both linear wizard (Path A) and chat-based onboarding (Path B) are confirmed to launch with a forking path at the start. Chat path needs:
+- Design: who owns the forking path UI?
+- How does chat offer differentiated utility vs. the linear wizard? (Overlap needs to be defined)
+- Coordination with Appointments Team (Andrew / Anacey) on in-product chatbot tone and handoff
+- Chat requires an initial sequential phase (vertical + appointment type) before going non-sequential
+
+### More specific step before generation
+Research confirmed a more specific step is needed before Screen 3 to improve relevance of generated cards. What this step collects (beyond broad industry) is not yet defined. Needs design input.
+
+### Notifications / business name
+Business name is blank by default for standalone users. Calendar name (set from account setup) is used in automated notifications — never blank. Relevant for any copy or preview that references the business name during the wizard.

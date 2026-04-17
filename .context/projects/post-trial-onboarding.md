@@ -1,4 +1,5 @@
-# Project: Post-Trial Interstitial Onboarding
+# Project: Post-Signup Interstitial Onboarding
+<!-- Previously called "post-trial onboarding" — renamed April 16, 2026. The experience fires after a user starts a trial (post-signup), not after a paid subscription. -->
 
 **Squad**: Growth Acquisition  
 **Stage**: Approved as time-boxed learning bet  
@@ -27,12 +28,26 @@ Rests on two validated assumptions:
 
 ## Solution: Hybrid of Concept A + Concept B
 
-> **Updated April 9, 2026**: Direction is shifting to a hybrid based on early UXR signal. See [design direction update](../meetings/2026-04-09-design-direction-update.md). Not yet finalized.
+> **Updated April 16, 2026**: Hybrid confirmed by UXR research. See [leads weekly notes](../meetings/2026-04-16-leads-weekly.md).
 
-- **Concept A (template-first)** — template cards serve as a fast-path starting point for users who want speed. Possibly extended to support selecting multiple templates upfront.
-- **Concept B (step-by-step)** — stepped, AI-guided flow powers the "create a new appointment type" path for users who want to build their own.
+Research findings:
+- Concept B preferred overall
+- Concept A excelled in speed perception
+- Both reduced blank slate anxiety
+- Users expected AI-generated content to be a good *starting point*, not ready-to-use
 
-Both paths are expected to coexist. The original concept review (see [2026-03-30](../meetings/2026-03-30-concept-review.md)) chose Concept B over Concept A in isolation, but UXR testing suggests the fastest path combines both.
+**Confirmed merged concept:**
+- **Fast path (Concept A) is central** — single-tap card selection from pre-generated suggestions
+- **A more specific step is added before generation** (beyond broad industry) to improve card relevance
+- **Concept B is the "depth mode"** — guided creation flow activates when user wants to build a custom appointment type
+
+**Two parallel launch paths (both confirmed):**
+- **Path A — Linear wizard** (Screens 0–5): Sequential, structured, evaluator mindset
+- **Path B — Chat-based**: Non-sequential, user-driven, users choose what matters to them and see relevant parts of Acuity sooner
+
+A forking path at the start allows users to choose between Path A and Path B. Chat path requires an initial sequential phase (vertical + appointment type) before going non-sequential.
+
+Both paths are expected to coexist. The original concept review (see [2026-03-30](../meetings/2026-03-30-concept-review.md)) chose Concept B over Concept A in isolation, but UXR testing confirmed the fastest path combines both.
 
 ### Wizard Flow
 
@@ -88,8 +103,10 @@ Both paths are expected to coexist. The original concept review (see [2026-03-30
 ## In Scope (Phase 1)
 - Mobile web only
 - Appointment-based (1:1) modality only
-- Post-trial placement (immediately after trial creation)
+- Post-signup placement (immediately after trial creation)
 - Minimum viable inputs to create a bookable appointment
+- Both linear wizard (Path A) and chat-based onboarding (Path B) — forking path at start
+- Prefabricated fixture content for Phase 1; AI integration in a later phase
 
 ## Deferred
 - Class-based modality
