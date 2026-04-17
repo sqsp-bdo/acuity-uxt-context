@@ -1,9 +1,9 @@
-# Design: Post-Trial Onboarding Wizard
+# Design: Post-Signup Onboarding Wizard
 
 **Figma source**: [UXT / Onboarding — [4.8] Hybrid](https://www.figma.com/design/okhVkzSEB2CLfob8eUABcm/%E2%9C%BC-UXT---Onboarding?node-id=1284-28539)  
+**UXR research**: [A/B Concept Test Synthesis (FigJam)](https://www.figma.com/board/FigJam-board-link) — 6/12 tests, Luenne Neri  
 **Key frames node**: `898:8470` (Wizard / Key frames)  
-**Selected concept**: Hybrid — Concept A template cards (fast path) + Concept B stepped flow (creation path). See [design direction update](../meetings/2026-04-09-design-direction-update.md).  
-> **Note**: Direction updated April 9, 2026 based on UXR testing. Not yet finalized — await updated designs from Luenne.
+**Selected concept**: Hybrid — Concept A template cards (fast path) + Concept B stepped flow (creation path). Confirmed April 16, 2026 by UXR research synthesis. See [leads weekly](../meetings/2026-04-16-leads-weekly.md) and [design direction update](../meetings/2026-04-09-design-direction-update.md).
 
 ## Screen Inventory
 
@@ -52,11 +52,16 @@
 
 ---
 
+### Screen 2.5 — [TBD: More Specific Step]
+> **Status**: Not yet designed. UXR confirmed that broad industry selection alone (Screen 1) is insufficient to generate relevant fixture cards. A more specific step is needed before Screen 3 to narrow the user's context (e.g., sub-vertical, target client type, or specific service category). What this step collects is not yet defined — needs design input from Luenne. Do not implement Screen 3 until this step is specified.
+
+---
+
 ### Screen 3 — Appointment Creation
 **Nav**: Back | Step X of Y | Skip  
-**Headline**: "Let's add your first appointment type"  
-**Subtext**: "Pick and customize these any time."  
-**Content**: Carousel of AI-generated appointment suggestions based on business type  
+**Headline**: "Add your first appointment"  
+**Subtext**: "Choose up to 3 services to start with, or create your own."  
+**Content**: Carousel of fixture-based appointment suggestions based on business type (Phase 1: deterministic fixtures; Phase 2: AI-generated)  
 Each card shows:
 - Appointment type name (e.g., "Haircut")
 - Duration + price (e.g., "60 minutes @ $100.00")
@@ -66,10 +71,12 @@ Each card shows:
 
 **Interactions**:
 - User can edit name, duration, price, description inline
-- "+ New appointment type" link below carousel
+- "Create your own" link below carousel (was "+ New appointment type" — renamed per UXR)
 - Expand card to edit details
 
 **CTA**: "Select and continue"
+
+**UXR note**: Users expected fixture/AI-generated cards to be a good *starting point*, not ready-to-use output. Framing as suggestions (not pre-made answers) reduces anxiety. Users were comfortable editing — they just needed to know editing was expected.
 
 ---
 
@@ -107,7 +114,15 @@ Each card shows:
 
 **CTAs**:
 - Primary: "Share" (full-width dark button)
-- Secondary: "Continue editing" (text link or close)
+- Secondary: "Book a test appointment" (lets users experience their own booking flow)
+- Tertiary: "Continue editing" (text link or close)
+
+**Next steps treatment** (launchpad, not finish line): Surface 2–3 suggested next actions after sharing, e.g.:
+- "Book a test appointment to see what clients experience"
+- "Add more services"
+- "Set up payment"
+
+**UXR note**: Screen 5 has a "false summit" problem — users completing it felt the product was less capable than expected because the screen looked like an end state, not a launchpad. The fix is to make it clear that the wizard was a fast path to get started, and that more setup awaits. Do NOT present this as "done." The headline and CTA framing should convey "you're ready to start taking bookings" while clearly surfacing what's next.
 
 ---
 
@@ -123,8 +138,14 @@ Each card shows:
 
 ## Concept A: Template-First (Fast Path)
 
-> **Status as of April 9, 2026**: No longer rejected — being reconsidered as the fast-path entry point in a hybrid approach. Possibly extended to allow selecting multiple templates upfront.
+> **Status as of April 16, 2026**: **Confirmed as the central fast path** in the hybrid concept. UXR synthesis (6/12 tests, Luenne) validated Concept A's speed advantage — users prioritizing fast setup consistently preferred the template-card approach. Concept B is the depth mode for custom creation. Updated designs from Luenne pending.
 
-Originally called "Concept 1" and deprioritized at the March 30 concept review. UXR testing since then suggests template cards work well as a starting point when paired with a stepped creation flow for custom appointment types.
+Originally called "Concept 1" and deprioritized at the March 30 concept review. Reconsidered April 9 after early UXR signals. Fully confirmed April 16 after UXR synthesis.
+
+UXR findings:
+- 4/6 users preferred Concept B overall, but Concept A excelled in **speed perception**
+- Template cards reduce blank-slate anxiety — users don't have to start from nothing
+- Users expected generated cards to be a starting point, not final output — framing matters
+- Merged concept uses Concept A as the entry path, with Concept B activating when user taps "Create your own"
 
 Original concern (still valid): users must not feel like they are "correcting" system-generated content. Template cards should feel like a fast-path choice, not a bundle that was auto-applied.

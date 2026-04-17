@@ -91,3 +91,41 @@ From Core Journey Review and UXR Brief:
 1. **Tailored onboarding flows** — Use intent data (industry, goals, stage of business) to personalize
 2. **Driving deeper actions** beyond basic setup — Users aren't being guided past initial page configuration
 3. **Real-time preview** — Users can't see changes in context, which delays the "aha moment"
+
+---
+
+## UXR: A/B Concept Test Synthesis (April 2026)
+
+*Source: Luenne Neri — FigJam synthesis from 6/12 usability tests comparing Concept A (template cards) vs Concept B (stepped creation). Conducted before the April 16 leads weekly.*
+
+### 11. "Good Starting Point" Is the Right Mental Model for Generated Content
+
+Users did not expect AI/fixture-generated cards to be final or accurate. They expected them to be a reasonable starting point that they would edit. This is healthy — it means generated content won't backfire as long as it's framed as suggestions, not pre-made answers.
+
+**Implication**: Copy and UX framing must reinforce the "starting point" idea. Phrases like "we'll suggest a few" or "customize these" set the right expectation. Do NOT frame generated cards as "your services" or present them as if already configured.
+
+### 12. "False Summit" on Screen 5 — The Completion Screen Felt Like an End, Not a Beginning
+
+Users who reached Screen 5 ("You are ready for your first booking!") felt the product was less capable than expected. The finish-line framing made the product feel shallow — like setup was *done* when in reality they'd only done the minimum.
+
+**Implication**: Screen 5 must be designed as a **launchpad**, not a finish line. Surface next steps prominently. "Book a test appointment" and "Add more services" should be visible CTAs — not buried. The screen should communicate "you're ready to take bookings AND there's more to explore."
+
+### 13. "Ready to Book" Meant Different Things to Different Users
+
+Some users interpreted "ready for your first booking" as meaning a client could already book — and were surprised when they explored further and found more setup required. Others expected the phrase to mean "the minimum is done, there's more to do."
+
+**Implication**: Avoid language that implies completeness. Prefer language that implies capability: "You can now take bookings" vs "You're ready." The distinction matters for expectation setting.
+
+### 14. Broad Industry Selection Alone Doesn't Generate Relevant Suggestions
+
+Selecting a broad vertical (e.g., "Wellness") is not specific enough to produce relevant appointment type cards. Users from different sub-verticals within the same category found the suggestions too generic.
+
+**Implication**: A more specific data-collection step is needed between Screen 2 (service type) and Screen 3 (appointment creation). What it collects is TBD (design input needed), but it must narrow the context enough to produce cards that feel tailored rather than generic.
+
+### 15. Concept A and Concept B Serve Different User Mindsets — Both Are Needed
+
+- **Concept B** (stepped creation flow) was preferred overall by 4/6 users — it felt thorough and confidence-building
+- **Concept A** (template cards) excelled for users who wanted to go fast — it reduced blank-slate anxiety instantly
+- Neither worked well alone for the full range of users
+
+**Implication**: The hybrid is not a compromise — it's the right design. Concept A as the entry point (fast path via template cards) with Concept B as the depth mode (activated via "Create your own") serves both the speed-focused and thoroughness-focused user mindsets.

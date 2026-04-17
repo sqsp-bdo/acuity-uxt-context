@@ -39,7 +39,7 @@ This folder is the source of truth for the Acuity UX Transformation Team (UXT). 
 ### History
 | File | Read when... |
 |------|-------------|
-| [history/onboarding-wizard-learnings.md](history/onboarding-wizard-learnings.md) | Making decisions about onboarding flow design — 10 validated learnings from prior experiments |
+| [history/onboarding-wizard-learnings.md](history/onboarding-wizard-learnings.md) | Making decisions about onboarding flow design — 10 validated learnings from prior experiments + 5 learnings from April 2026 UXR Concept A/B synthesis |
 
 ### Meetings
 | File | Read when... |
