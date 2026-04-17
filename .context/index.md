@@ -8,6 +8,7 @@ This folder is the source of truth for the Acuity UX Transformation Team (UXT). 
 | File | Read when... |
 |------|-------------|
 | [team/mandate.md](team/mandate.md) | You need to understand the mission, guiding principles, or hypotheses we're testing |
+| [team/hypotheses.md](team/hypotheses.md) | You need evidence for or against the 5 UXT hypotheses — includes UXR findings on aha moments, vocabulary, and opinionated setup |
 | [team/operations.md](team/operations.md) | You need to understand sprint cadence, measurement approach, or how we ship |
 | [team/icps.md](team/icps.md) | You need to understand our target customers and their mental models |
 

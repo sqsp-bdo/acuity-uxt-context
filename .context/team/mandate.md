@@ -41,6 +41,35 @@ Increase the share of new trials that become **"open for business"** (have at le
 
 Shared: north star + funnel, hypotheses, one UXT backlog both squads pull from.
 
+## How We Work
+
+- **Cadence**: Strict two-week sprints. Every sprint must result in something testable — a prototype, experiment, or shipped change.
+- **Weekly review covers**: Next problem area (PM, Marketing) / Design in progress (PM, PD, Marketing) / Sprint delivery (PM, Eng) / Learnings from prior delivery (PM, PA)
+- **Measurement**: What we ship, what we learn, impact on metrics. Not artifacts produced.
+- **Bias**: AI-enhanced ideation, design, and delivery. Bold, opinionated solutions. Incremental optimization is not transformation.
+- **Constraint handling**: Ignore constraints in favor of ideal user experience, *then* figure out how to remove them. When opportunities warrant larger investment, defend with evidence.
+
+## Department-Specific Prompts
+
+**Marketing**
+- "How do we signal, from the first impression, that Acuity is built for businesses like Mud Hut / Shannon Lee Esthetics / BK Metalworks?"
+- "Where do our acquisition promises diverge from what the product actually does in the first 5 minutes?"
+
+**Product**
+- "What is our official definition of 'open for business' by modality, and how will we instrument it?"
+- "What existing flows or requirements can we remove or push later without harming long-term success?"
+
+**Design**
+- "What does 'guided by default' look like not just in onboarding, but as a system that continues after first booking?"
+- "How should appointment vs class journeys diverge visually and structurally so they reflect real operating models?"
+
+**Research**
+- "What are the 3–4 core questions we must answer about expectations, aha moments, and friction in trial to design the right paths?"
+
+**PA / Data**
+- "How do we build a standard, enduring view of the Interested → Open for Business funnel, by modality, device, and channel, that every team can see weekly?"
+- "How might we validate UX transformation changes outside of A/B testing?" — For things we don't A/B test, holdout groups may be preferable to pre/post analysis given lower operational lift and fewer confounds.
+
 ## Business Context
 
 Since start of 2026, Acuity has underperformed against subscription operating plan:
