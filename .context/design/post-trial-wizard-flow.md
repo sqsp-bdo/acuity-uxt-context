@@ -55,6 +55,8 @@
 ### Screen 2.5 — [TBD: More Specific Step]
 > **Status**: Not yet designed. UXR confirmed that broad industry selection alone (Screen 1) is insufficient to generate relevant fixture cards. A more specific step is needed before Screen 3 to narrow the user's context (e.g., sub-vertical, target client type, or specific service category). What this step collects is not yet defined — needs design input from Luenne. Do not implement Screen 3 until this step is specified.
 
+> **April 20 update**: Default data (duration, price) should be driven by industry, service, and ideally location. For the "create new" path, price takes all previous wizard steps into account (including duration). Phase 1 uses fixture templates per vertical; Luenne is determining template appointment types for each vertical.
+
 ---
 
 ### Screen 3 — Appointment Creation
@@ -94,6 +96,8 @@ Each card shows:
 **Helper text**: "Suggested times based on similar businesses."  
 **CTA**: "Next"
 
+> **April 20 update**: Keep this screen simple — business hours only, similar to home page stage 1. No availability groups, no complex schedules. Luenne is refining messaging for users who want more advanced availability settings — that capability lives outside the wizard.
+
 ---
 
 ### Screen 5 — Booking Ready
@@ -112,19 +116,34 @@ Each card shows:
 - Font selector (e.g., Source Sans Pro)
 - Cover image picker
 
+> **April 20 update — CSP styling being rethought**: Luenne identified that the color selection is not fully represented on the mini CSP. This section is being redesigned. Do NOT use the full CSP — it would slow velocity. Keep the mini/limited CSP preview for Phase 1; full CSP deferred to a later iteration. Image generation also deferred — use a standard upload utility for cover images instead.
+
 **CTAs**:
 - Primary: "Share" (full-width dark button)
 - Secondary: "Book a test appointment" (lets users experience their own booking flow)
 - Tertiary: "Continue editing" (text link or close)
+
+> **April 20 update — Flow conclusion still open**: Share button interaction and transition from final screen to `home.php` not yet defined. Needs design input from Luenne.
 
 **Next steps treatment** (launchpad, not finish line): Surface 2–3 suggested next actions after sharing, e.g.:
 - "Book a test appointment to see what clients experience"
 - "Add more services"
 - "Set up payment"
 
+> **April 20 update — Post-wizard homepage**: Luenne is designing a new home page component to signify wizard completion and show progress. Not simply home page stage 2 — a distinct post-wizard treatment.
+
 **UXR note**: Screen 5 has a "false summit" problem — users completing it felt the product was less capable than expected because the screen looked like an end state, not a launchpad. The fix is to make it clear that the wizard was a fast path to get started, and that more setup awaits. Do NOT present this as "done." The headline and CTA framing should convey "you're ready to start taking bookings" while clearly surfacing what's next.
 
 ---
+
+## Wizard Abandonment & Skip Behavior
+> Added April 20, 2026. See [design open questions](../meetings/2026-04-20-design-open-questions.md).
+
+- **Passive quit** (browser crash, accidental close): Re-show the wizard on next login.
+- **Active quit** (user explicitly taps Skip or acknowledges they want to leave): Show the home page on next login; do not re-show the wizard.
+- **Partial setup is discarded** in Phase 1 — anything partially configured during the wizard is not persisted.
+- A **confirmation dialog** will be added to skip/abandon actions (Luenne adding to designs). The "Do this later" text should be revised to clearly indicate the user is choosing to skip.
+- **Currency**: USD only for Phase 1. Foreign currency support deferred until edge cases, UX, and SQSP–Acuity sync are worked through.
 
 ## Visual Design Notes
 

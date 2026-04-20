@@ -1,15 +1,18 @@
-# AI Infrastructure Sync: Jeremy (Principal Engineer)
+# AI Infrastructure Sync: Jeremy Johnstone (Principal Engineer)
 **Date**: April 17, 2026
-**Attendees**: Brian Do, Jeremy (Principal Engineer, Squarespace — Blueprint/Beacon AI infrastructure)
+**Attendees**: Brian Do, Jeremy Johnstone
 
 ---
 
 ## Key Decision
 
 ### Do not use `sqsp/ai-content-generator`
-Guidance from Jeremy: `ai-content-generator` has bad practices. Acuity should **not** integrate with it.
+Guidance from Jeremy: `ai-content-generator` follows bad practices — he wants to avoid using it. Acuity should **not** integrate with it.
 
-**Implication**: Acuity will build and own its own AI service in AWS rather than integrating with Squarespace's shared GCP-based service.
+### Acuity-owned service is the better fit overall
+Beyond latency concerns (cross-DC AWS↔GCP), Jeremy noted that an Acuity-owned solution can better serve Acuity's specific needs — for example, authenticating without requiring `memberAccountId` and `websiteId`, which are Squarespace-platform concepts that don't map cleanly to Acuity's auth model.
+
+**Implication**: Acuity will build and own its own AI service in AWS rather than integrating with Squarespace's shared GCP-based service. This gives Acuity control over auth patterns, latency, and service quality.
 
 ---
 
@@ -22,7 +25,7 @@ Guidance from Jeremy: `ai-content-generator` has bad practices. Acuity should **
 - OpenAI → Anthropic fallback
 - Existing production deployment on GCP
 
-However, the cross-DC latency (Acuity on AWS, service on GCP) was estimated at ~500ms — potentially acceptable — but Jeremy's guidance to avoid the service makes this moot.
+However, Jeremy's guidance to avoid the service makes this moot — both on code quality grounds and because an Acuity-owned service sidesteps the cross-DC latency and auth mismatch issues entirely.
 
 ---
 

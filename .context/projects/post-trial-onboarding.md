@@ -107,12 +107,25 @@ Both paths are expected to coexist. The original concept review (see [2026-03-30
 - Minimum viable inputs to create a bookable appointment
 - Both linear wizard (Path A) and chat-based onboarding (Path B) — forking path at start
 - Prefabricated fixture content for Phase 1; AI integration in a later phase
+- USD currency only
+- Business hours only (no availability groups or complex schedules)
+- Mini CSP preview on final screen (not full CSP)
+- Standard image upload for cover photos (no AI image generation)
+- Confirmation dialog on skip/abandon actions
+- Active vs. passive quit distinction: passive quits re-show wizard, active skips do not
+- Partial wizard setup is discarded (not persisted)
+- Fixture templates per vertical as AI fallback
 
 ## Deferred
 - Class-based modality
 - Desktop and admin app adaptation
 - Deeper guided experience beyond initial onboarding
 - Navigation improvements (separate initiative)
+- AI image generation for cover photos (cost/latency concerns)
+- Full CSP styling page on final screen (velocity risk)
+- Foreign currency support (edge cases, SQSP–Acuity sync TBD)
+- AI streaming UX (not needed given fast models and simple responses)
+- Advanced availability settings in wizard (availability groups, complex schedules)
 
 ## KPIs
 
